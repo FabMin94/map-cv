@@ -2,9 +2,10 @@
 var map = L.map('map', { zoomControl: false }).setView([51, 10], 6); // Center on Europe
 
 // ESRI Background
-var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-attribution: 'Tiles &copy; Esri'
-}).addTo(map);
+var Esri_WorldImagery = L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
+    {attribution: 'Tiles &copy; Esri'}
+).addTo(map);
 
 
 // Locations with descriptions
