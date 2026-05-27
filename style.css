@@ -4,6 +4,7 @@ html, body {
 }
 #map {
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
 }
 /* Flex container for buttons & title */
@@ -252,6 +253,9 @@ html, body {
     display: none;
 }
 
+.leaflet-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}
 /* Responsive layout for smaller screens */
 @media (max-width: 1550px) {
     .info-button {
