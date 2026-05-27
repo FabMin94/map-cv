@@ -158,5 +158,19 @@ document.querySelectorAll(".info-button").forEach(button => {
     })
 });
 
+// Dynamically position top-buttons below #pagetitle on mobile
+function adjustTopButtons() {
+    const pagetitle = document.getElementById('pagetitle');
+    const topButtons = document.querySelector('.top-buttons');
+    if (!pagetitle || !topButtons) return;
+
+    const rect = pagetitle.getBoundingClientRect();
+    // rect.bottom is the distance from viewport top to the bottom of #pagetitle
+    topButtons.style.top = (rect.bottom + 8) + 'px';
+}
+
+// Run on load and on resize
+adjustTopButtons();
+window.addEventListener('resize', adjustTopButtons);
 // Start at the first location
 goToLocation(0);

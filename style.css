@@ -307,7 +307,7 @@ html, body {
         z-index: 1000;
         gap: 10px;
     }
-    .top-buttons { top: calc(5% + 130px); }
+    .top-buttons { top: calc(5% + 140px); }
     .bottom-buttons { top: 90%; }
     .info-button { min-width: 220px; }
     .dropdown-info { width: 220px; }
