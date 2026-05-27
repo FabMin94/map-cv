@@ -196,7 +196,7 @@ html, body {
     top: 100%;  /* Position it below the button */
     left: 0;
     background-color: white;
-    min-width: 250px;
+    min-width: 270px;
     z-index: 1;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -214,7 +214,7 @@ html, body {
     padding: 12px 16px;
     text-decoration: none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     text-align: left;
 }
@@ -227,6 +227,7 @@ html, body {
     flex-shrink: 0;
     width: 16px;
     text-align: center;
+    margin-top: 3px;
 }
 
 /* Navigation Buttons */
